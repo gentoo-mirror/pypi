@@ -1,16 +1,16 @@
-BDEPEND=dev-python/toml[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=dev-python/toml[python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
 DEFINED_PHASES=compile configure install prepare test unpack
 DESCRIPTION=Set of base PyMoDAQ plugins including Mock ones for development
 EAPI=8
 HOMEPAGE=https://github.com/PyMoDAQ/pymodaq_plugins
 INHERIT=python-r1 gs-pypi
-IUSE=python_targets_python3_10 python_targets_python3_11 python_targets_python3_12
+IUSE=python_targets_python3_11 python_targets_python3_12
 KEYWORDS=~amd64 ~x86
 LICENSE=CECILL B
-RDEPEND=dev-python/toml[python_targets_python3_10(-)?,python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_10? ( dev-lang/python:3.10 ) python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=dev-python/toml[python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
+REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
 RESTRICT=test
 SLOT=0
 SRC_URI=https://files.pythonhosted.org/packages/source/p/pymodaq-plugins/pymodaq_plugins-3.5.0.tar.gz
-_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	python-utils-r1	974462533ec80cd68e5f366ad8a86002	python-r1	0e15b2ab9cfc87d7474678201d6bca38	flag-o-matic	e8de74bac929ba17427e740e95707d00	multilib	b2a329026f2e404e9e371097dda47f96	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	gs-distutils-r1	8d3844b6b903f08bc4e83bd198f8a72f	g-sorcery	692c9ad583c66d03e7c0e8b3b106a435	gs-pypi	1ce6ce880db2f1f1e7842a13bd058366
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	python-utils-r1	b6ad054ea5bb201ed2fec9cac7a8d12b	python-r1	0e15b2ab9cfc87d7474678201d6bca38	flag-o-matic	e8de74bac929ba17427e740e95707d00	multilib	b2a329026f2e404e9e371097dda47f96	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	gs-distutils-r1	8d3844b6b903f08bc4e83bd198f8a72f	g-sorcery	692c9ad583c66d03e7c0e8b3b106a435	gs-pypi	1ce6ce880db2f1f1e7842a13bd058366
 _md5_=03a42d3b2f77cc338e1b616fd4e544ae
